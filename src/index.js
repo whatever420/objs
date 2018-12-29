@@ -1,0 +1,6 @@
+function generateNoisyMaterial() {
+}
+
+export {
+  generateNoisyMaterial,
+}
