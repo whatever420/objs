@@ -36,10 +36,15 @@ export function random_object(num_vertices, num_faces) {
   let edges = [];
   let normals = [];
 
+  // generate random vector-3's and add them to the vertices array
+  // XXX: optimize this later by making vertices a Float32Array from the get-go
   for (let i=0; i < num_vertices; i++) {
     vertices.push(...random_vec3());
   }
 
+  // generate random integer combinations and add them to the edges array
+  // additionally, generate the normal vector for that flat face
+  // XXX: optimize this later by making vertices a Float32Array from the get-go
   for (let i=0; i < num_faces; i++) {
     let a = Math.floor(random(0, num_vertices));
     let b = Math.floor(random(0, num_vertices));
@@ -49,6 +54,8 @@ export function random_object(num_vertices, num_faces) {
     let u = sub(getVertex(c), getVertex(a));
     let v = sub(getVertex(b), getVertex(a));
     let n = normalize(cross(u, v));
+    normals.push(...n);
+    normals.push(...n);
     normals.push(...n);
   }
 

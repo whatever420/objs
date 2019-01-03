@@ -26,9 +26,9 @@
     ToThreeGeometry(objs.random_object(100, 100, 0)),
     new THREE.MeshPhongMaterial({
       color: 0xFF00FF,
-      emissive: 0x000000,
+      emissive: 0x004400,
       specular: 0xFFFFFF,
-      shininess: 30.0,
+      shininess: 3.0,
       side: THREE.DoubleSide,
     }),
   );
