@@ -1,5 +1,5 @@
 {
-  "name": "@whatever420/objs",
+  "name": "@internet-research-labs/objs",
   "version": "0.0.420",
   "description": "generative obj + material",
   "main": "src/index.js",
@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "npm": "^6.4.1",
-    "simplex-noise": "^2.4.0"
+    "simplex-noise": "^2.4.0",
+    "@pool-water/math": "0.0.1"
   }
 }

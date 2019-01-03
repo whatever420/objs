@@ -1,6 +1,1 @@
-function generateNoisyMaterial() {
-}
-
-export {
-  generateNoisyMaterial,
-}
+export * from './tombstone.js';
